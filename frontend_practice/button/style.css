@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.first-div {
+  display: inline-block;
+}*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+}
+
+a {
+  background: purple;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  color-weight: bold;
+  padding: 5px 10px;
+  height: 100%;
+}
+
+a:hover {
+  color: blue;
+}
+
+div {
+  color: red;
+  padding: 5px;
+}
+
+div:hover, div:hover ~ div {
+  color: green;
+}
+
+nav {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  clear: both;
+}
