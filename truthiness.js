@@ -17,7 +17,7 @@ reflexive(NaN);
 function transitive(x,y,z) {
   return x && x == y && y == z && x != z;
 }
-transitive("1", 1, true)
+transitive("1", 1, true);
 
 // Counter
 function counter(f) {
@@ -64,7 +64,7 @@ function instance(x,y) {
 }
 
 instance(
-)
+);
 
 function proto1(x) {
   return x && !("__proto__" in x);
@@ -76,7 +76,7 @@ proto1(
     x.prototype = undefined;
     return x;
   }()
-)
+);
 
 function undef(x) {
   return !{ undefined: { undefined: 1 } }[typeof x][x];
