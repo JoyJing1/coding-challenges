@@ -1,3 +1,5 @@
+require 'byebug'
+
 class User < ActiveRecord::Base
   validates :username, :password_digest, :session_token, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
@@ -11,13 +13,23 @@ class User < ActiveRecord::Base
     nil
   end
 
+  # def password=(password)
+  #   @password = password
+  #   self.password_digest = BCrypt::Password.create(password)
+  # end
+  #
+  # def is_password?(password)
+  #   BCrypt::Password.new(self.password_digest).is_password?(password)
+  # end
+
   def password=(password)
     @password = password
+    # debugger;
     self.password_digest = BCrypt::Password.create(password)
   end
 
-  def is_password?(password)
-    BCrypt::Passord.new(self.password_digest).is_password?(password)
+  def valid_password?(password)
+    BCrypt::Password.new(self.password_digest).is_password?(password)
   end
 
   def ensure_token

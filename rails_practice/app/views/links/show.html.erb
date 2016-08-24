@@ -1,21 +1,9 @@
-<h1>Edit Link</h1>
+<h1>Link Show Page</h1>
 
 <%= flash[:errors].join("<br>").html_safe if flash[:errors] %>
 
-<form action="<%= link_url(@link) %>" method="post">
-  <input type="hidden" name="_method" value="patch">
+<%= @link.title %>
+<%= @link.url %>
 
-  <input type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
-
-  <label>Title
-    <input type="text" name="link[title]" value="<%= @link.title %>" id="Title">
-  </label>
-
-  <label>URL
-    <input type="text" name="link[url]" value="<%= @link.url %>" id="URL">
-  </label>
-
-  <input type="submit" value="Update Link">
-</form>
+<%= link_to "Links", links_url%>
+<%= link_to "Edit Link", edit_link_url(@link)%>
