@@ -5,15 +5,13 @@ function highestProfit(stocks) {
   let min = stocks[0];
   let buy = stocks[0];
   let sell = stocks[1];
-  let profit = sell - buy;
   if (stocks[1] < min) { min = stocks[1]; }
 
   for (let i = 2; i < stocks.length ; i++) {
     let curr = stocks[i];
-    if (curr - min > profit) {
+    if (curr - min > sell - buy) {
       buy = min;
       sell = curr;
-      profit = sell - buy;
     }
     if (curr < min) {
       min = curr;
