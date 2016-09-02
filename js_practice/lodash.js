@@ -32,3 +32,8 @@ console.log(unioned);
 console.log(unioned.sort( (a, b) => a - b ));
 
 console.log(_.union([1,2,4,4,7,4,3,1,2,2,3,3,2]));
+
+
+console.log(_.chunk([2,3,4,6,6,8,0,3,1,4], 3));
+
+console.log(_.difference([2,3,4,6], [3,4,5,7]));
