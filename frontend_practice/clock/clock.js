@@ -31,4 +31,7 @@ function updateClock() {
   let secondDiv = document.querySelector("span.seconds");
   secondDiv.innerHTML = seconds;
 
+  if (delta === 0) {
+    alert("Happy New Year!!!");
+  }
 }
