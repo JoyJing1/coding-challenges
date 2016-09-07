@@ -1,9 +1,5 @@
 const _ = require("lodash");
 
-
-console.log(_.empty([]));
-debugger;
-
 function heapSort(arr) {
   let heap = [];
 
@@ -44,7 +40,7 @@ Array.prototype.heapifyDown = function(idx) {
   let parentIdx = idx;
   let children = childIdx(idx);
 
-  // if (children.empty())
+  if (children.length > 0)
 }
 
 

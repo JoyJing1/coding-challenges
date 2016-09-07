@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span, label {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+}
