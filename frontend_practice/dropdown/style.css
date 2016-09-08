@@ -1,0 +1,39 @@
+.container {
+  align-items: center;
+  /*background-color: blue;*/
+}
+
+button {
+  margin: 0 auto;
+  color: green;
+  font-size: 18px;
+}
+
+ul.hidden-list {
+  list-style: none;
+  padding-left: 0;
+  /*display: none;*/
+  /*position: absolute;*/
+  /*bottom: 57px;*/
+  /*flex-direction: column;*/
+}
+
+.hidden-list li {
+  /*background-color: gray;*/
+  height: initial;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 40%;
+  /*margin: 0 auto;*/
+  /*display: none;*/
+}
+
+a:hover {
+  color: red;
+}
+
+a:hover ul {
+  /*display: block;*/
+  background-color: orange;
+}
