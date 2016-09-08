@@ -1,0 +1,58 @@
+html, body {
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+h2, h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+input {
+  padding: 7px;
+  width: calc(100% - 20px);
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #AAAAAA;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #EA0B8C;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-appearance: button;
+  cursor: pointer;
+  border-color: #B80B8C;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: initial;
+  margin-right:8px;
+}
+
+a, h1 {
+  color: #FF00BF;
+}
+
+a {
+  cursor: pointer;
+}
+
+aside.form-container {
+  border: 2px solid gray;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 90%;
+}
