@@ -56,3 +56,7 @@ aside.form-container {
   margin: 0 auto;
   width: 90%;
 }
+
+.red {
+  border: 1px solid red;
+}
