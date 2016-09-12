@@ -98,34 +98,47 @@
 // spinWords("Hey fellow warriors");
 // // , "Hey wollef sroirraw");
 
-function isIsogram(str){
-  const letters = {};
+// function isIsogram(str){
+//   const letters = {};
+//
+//   for (let i = 0; i < str.length; i++) {
+//     let letter = str[i].toLowerCase();
+//     if (letters[letter]) {
+//       return false;
+//     } else {
+//       letters[letter] = true;
+//     }
+//   }
+//   return true;
+// }
+//
+// function isIsogram(str){
+//   return !/(\w).*\1/i.test(str)
+// }
+//
+// isIsogram("Dermatoglyphics");
+// // , true );
+// isIsogram("isogram");
+// // , true );
+// isIsogram("aba");
+// // , false, "same chars may not be adjacent" );
+// isIsogram("moOse");
+// // , false, "same chars may not be same case" );
+// isIsogram("isIsogram");
+// // , false );
+// isIsogram("");
+// // , true
+// // , "an empty string is a valid isogram" );
 
-  for (let i = 0; i < str.length; i++) {
-    let letter = str[i].toLowerCase();
-    if (letters[letter]) {
-      return false;
-    } else {
-      letters[letter] = true;
-    }
-  }
-  return true;
+
+// Remove all punctuation and change capitalized letters to lower case for a given string.
+
+function borrow(str) {
+   return str.replace(/[^\w]/g, '').toLowerCase();
 }
 
-function isIsogram(str){
-  return !/(\w).*\1/i.test(str)
-}
-
-isIsogram("Dermatoglyphics");
-// , true );
-isIsogram("isogram");
-// , true );
-isIsogram("aba");
-// , false, "same chars may not be adjacent" );
-isIsogram("moOse");
-// , false, "same chars may not be same case" );
-isIsogram("isIsogram");
-// , false );
-isIsogram("");
-// , true
-// , "an empty string is a valid isogram" );
+// return str.toLowerCase().replace(/[.,?\/#!$%\^&\*;:{}=\-_`~()\s]/g, "");
+// .replace(/\s{2,}/g," ");;
+console.log(borrow('WhAt! FiCK! DaMn CAke?')); //, 'whatfickdamncake');
+console.log(borrow('THE big PeOpLE Here!!')); //, 'thebigpeoplehere');
+console.log(borrow('i AM a TINY BoY!!')); //, 'iamatinyboy');
