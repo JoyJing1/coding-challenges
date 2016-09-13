@@ -1,6 +1,6 @@
-// Partition problem is to determine whether a given array of integerss
+// Partition problem is to determine whether a given array of integers
 // can be partitioned into two subsets such that
-// the sum of elements in both subsets is same.
+// the sum of elements in both subsets is the same.
 
 function canPartition(arr) {
   let sum = arr.reduce( (all, el) => all + el );
